@@ -5,7 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titulo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
     <style>
+    /*<details>
+    <summary>Label</summary>
+        <ul>
+            <li>numero 1</li>
+            <li>numero 2</li>
+            <li>numero 3</li>
+        </ul>
+
+    </details>*/
         /*p:first-child{
             color: black;
             background: greenyellow;
@@ -31,38 +41,85 @@
         body {
             margin: 0;
             box-sizing: border-box;
+            background-color: #21C08B;
+            font-family: "Muli", sans-serif;
         }
         .globalwith {
             width: 100%;
         }
-        header {
+        .header {
             height: 80px;
-            background-color: #21C08B;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        header img {
-            width: 230px;
-            margin-top: 5px;
+        .header__img {
+            width: 220px;
             margin-left: 10px;
         }
-        footer {
-            background-color: #21C08B;
+        .header__menu{
+            margin-right: 10px;
         }
+        .header__menu ul{
+            display: none;
+            list-style: none;
+            padding: 0px;
+            position: absolute;
+            text-align: right;
+            margin: 0px 0px 0px -14px;
+        }
+        
+        .header__menu:hover ul, ul:hover{
+            display: block;
+        }
+
+        .header__menu li {
+            margin: 10px 0px;
+        }
+
+        .header__menu li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header__menu li a:hover {
+            text-decoration: underline;
+        }
+
+        .header__menu--profile{
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header__menu--profile img{
+            margin-right: 8px;
+            width: 40px;
+        }
+        
+        .header__menu--profile p {
+            margin: 0px;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
-    <header class="globalwidth">
-        <img src="file:///C:/Users/leonardo/Desktop/xd.png">
+    <header class="header" globalwidth>
+        <img class="header__img" src="file:///C:/Users/leonardo/Desktop/xd.png">
+        
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="file:///C:/Users/leonardo/Desktop/profile.png" alt="User">
+                <p>Perfil</p>
+            </div>
+            <ul>
+                <li><a href="/">Cuenta</a></li>
+                <li><a href="/">Cerrar Sesion</a></li>
+            </ul>
+        </div>
+
     </header>
-    <br><br>
-    <footer globalwidth>
-        <button class="footer__button--red">RED</button>
-        <button class="footer__button--blue">BLUE</button>
-        <br>
-        <p>Pepe fue a comer algo.</p>
-        <p>Pepe fue a cepillarse los dientes.</p>
-        <p>Pepe fue a trabajar.</p>
-        <p>Pepe fue a tomar el autobus.</p>
-        <p>Pepe llego al trabajo.</p>
-    </footer>
+
 </body>
 </html>
