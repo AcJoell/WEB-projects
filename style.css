@@ -1,0 +1,79 @@
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Muli", sans-serif;
+        }
+        .globalwith {
+            width: 100%;
+        }
+
+/* -------------- HEADER ------------- */
+
+        .header {
+            height: 80px;
+            display: flex;
+            background-color: #21C08B;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header__img {
+            width: 220px;
+            margin-left: 10px;
+        }
+
+/* --------------- LOGIN ------------------*/
+
+.login {
+    background: linear-gradient(#21C08B, #AB88FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.login__container {
+    background-color: rgba(255,255,255,0.2);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 50px 70px 50px;
+    min-height: 700px;
+    width: 300px;
+}
+
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--form label{
+    font-size: 14px;
+}
+
+.login__container--remember-me{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login__container--remember-me a{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login__container--remember-me a:hover{
+    text-decoration: underline;
+}
+
+.login__container--social-media > div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
