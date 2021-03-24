@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.header{
+    outline: 2px solid yellowgreen;
+    height: 4rem;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_item {
+    list-style: none;
+    flex: 1;
+    outline: 2px solid black;
+    line-height: 4rem;
+    text-align: center;
+    background: lightblue;
+    font-weight: bold;
+}
+
+.menu_item:hover {
+    flex: 1.5;
+    background: darkcyan;
+    color: white;
+}
+
+.container{
+    outline: 2px solid salmon;
+    display: flex;
+    flex: 1;
+}
+
+.content {
+    outline: 2px solid yellow;
+    flex: 1;
+}
+
+.aside {
+    outline: 2px solid pink;
+    flex: 0 0 25%;
+}
+
+.footer{
+    background: cadetblue;
+    outline: 2px solid black;
+    height: 6rem;
+    margin-top: auto;
+    display: flex;
+}

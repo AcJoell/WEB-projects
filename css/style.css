@@ -1,167 +1,178 @@
-        body {
-            margin: 0;
-            box-sizing: border-box;
-            font-family: "Muli", sans-serif;
-        }
-        .globalwith {
-            width: 100%;
-        }
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Muli", sans-serif;
+}
+
+.globalwith {
+  width: 100%;
+}
 
 /* -------------- HEADER ------------- */
+.flex, .header {
+  display: flex;
+  align-items: center;
+}
 
-        .header {
-            height: 80px;
-            display: flex;
-            background-color: #21C08B;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .header__img {
-            width: 220px;
-            margin-left: 10px;
-        }
+.header {
+  height: 80px;
+  background-color: #21C08B;
+  justify-content: space-between;
+}
+
+.header__img {
+  width: 220px;
+  margin-left: 10px;
+}
 
 /* --------------- LOGIN ------------------*/
-
 .login {
-    background: linear-gradient(#21C08B, #AB88FF);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px 30px;
-    min-height: calc(100vh - 200px);
+  background: linear-gradient(#21C08B, #AB88FF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  min-height: calc(100vh - 200px);
 }
 
 .login__container {
-    background-color: rgba(255,255,255,0.2);
-    border: 2px solid white;
-    border-radius: 40px;
-    color: white;
-    padding: 50px 70px 50px;
-    min-height: 700px;
-    width: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  border-radius: 40px;
+  color: white;
+  padding: 50px 70px 50px;
+  min-height: 700px;
+  width: 300px;
 }
 
-.login__container--form{
-    display: flex;
-    flex-direction: column;
+.login__container--form {
+  display: flex;
+  flex-direction: column;
 }
 
-.login__container--form label{
-    font-size: 14px;
+.login__container--form label {
+  font-size: 14px;
 }
 
-.login__container--remember-me{
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 25px 0px;
+.login__container--remember-me {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 25px 0px;
 }
 
-.login__container--remember-me a{
-    padding: 0px;
-    margin: 0px;
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
+.login__container--remember-me a {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
 }
 
-.login__container--remember-me a:hover{
-    text-decoration: underline;
+.login__container--remember-me a:hover {
+  text-decoration: underline;
 }
 
-.login__container--social-media > div{
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    margin-bottom: 10px;
+.login__container--social-media > div {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
-.login__container--social-media > div > img{
-    width: 30px;
-    margin-right: 10px;
+.login__container--social-media > div > img {
+  width: 30px;
+  margin-right: 10px;
 }
 
-.login__container--register{
-    font-size: 14px;
-    color: white;
+.login__container--register {
+  font-size: 14px;
+  color: white;
 }
 
-.login__container--register a{
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    text-decoration: none;
+.login__container--register a {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
 }
 
-.login__container--register a:hover{
-    text-decoration: underline;
+.login__container--register a:hover {
+  text-decoration: underline;
 }
 
 /* ---------- INPUT ------------- */
-
-.input{
-    background-color: transparent;
-    border-left: 0px;
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 2px solid white;
-    font-family: "Muli", sans-serif;
-    margin-bottom: 20px;
-    padding: 10px;
-    outline: none; /*LINEA EXTERIOR DE MARCADO*/
-    height: 50px;
+.input {
+  background-color: transparent;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid white;
+  font-family: "Muli", sans-serif;
+  margin-bottom: 20px;
+  padding: 10px;
+  outline: none;
+  /*LINEA EXTERIOR DE MARCADO*/
+  height: 50px;
 }
 
 ::placeholder {
-    color: white;
+  color: white;
 }
 
-.button{
-    background-color: rgba(255,255,255,0.2);
-    border-radius: 25px;
-    border: 1px solid rgba(255,255,255,0.5);
-    color: white;
-    cursor: pointer;
-    font-family: "Muli", sans-serif;
-    font-weight: bold; /*Negrilla*/
-    height: 50px;
-    letter-spacing: 1px; /* Separa entre si las letras */
-    margin: 10px 0px;
+.button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  cursor: pointer;
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+  /*Negrilla*/
+  height: 50px;
+  letter-spacing: 1px;
+  /* Separa entre si las letras */
+  margin: 10px 0px;
 }
 
-.footer{
-    background-color: #AB88FF;
-    display: flex;
-    align-items: center;
-    height: 100px;
-    width: 100%;
+.footer {
+  background-color: #AB88FF;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
 }
 
 .footer a {
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-    padding-left: 30px;
-    text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
 }
 
-.footer a:hover {text-decoration: underline;}
-
-@media only screen and (max-width: 600px){
-    .login__container{
-        background-color: transparent;
-        border: none;
-        padding: 0px;
-        width: 100%
-    }
-    .footer {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-    .footer a {
-        margin-top: 9px;
-    }
+.footer a:hover {
+  text-decoration: underline;
 }
+
+@media only screen and (max-width: 600px) {
+  .login__container {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer a {
+    margin-top: 9px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
